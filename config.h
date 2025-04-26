@@ -67,13 +67,13 @@ static const struct arg args[] = {
 	/* function format          argument */
 	/*{ cpu_perc,			"CPU: %s%% | ",	NULL },
 	{ ram_used,			"RAM: %s of ",		NULL },	
-	{ ram_total,		"%s | ",		NULL },	*/
+	{ ram_total,		"%s | ",		NULL },
 	{ wifi_essid,		" %s ",		"wlp2s0" },
 	{ wifi_perc,		" %s%% | ",		"wlp2s0" },
 	{ battery_perc,		" %s%% ",		"BAT0" },
 	{ battery_remaining,    "%s",          "BAT0" },
 	{ battery_state,       " %s | ",          "BAT0" },
-	{ uptime,			" %s | ",	NULL },
+	{ uptime,			" %s | ",	NULL }, */
 	{ datetime,			"%s","%F %T "},
 	//{ keymap,			" %s",				""},
 
