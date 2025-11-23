@@ -9,6 +9,12 @@ static const char unknown_str[] = "n/a";
 /* maximum output string length */
 #define MAXLEN 2048
 
+#define RED   "\x1b[31m"
+#define GREEN "\x1b[32m"
+#define YELLOW "\x1b[33m"
+#define BLUE  "\x1b[34m"
+#define RESET "\x1b[0m"
+
 /*
  * function            description                     argument (example)
  *
@@ -65,16 +71,17 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	/*{ cpu_perc,			"CPU: %s%% | ",	NULL },
+	/*{ cpu_perc, "^c#d791a8^  CPU: ^c#FFFFFF^%s%%", 	NULL },
 	{ ram_used,			"RAM: %s of ",		NULL },	
 	{ ram_total,		"%s | ",		NULL },
-	{ wifi_essid,		" %s ",		"wlp2s0" },
+	{ wifi_essid,		" %s",		"wlp61s0" },
 	{ wifi_perc,		" %s%% | ",		"wlp2s0" },
 	{ battery_perc,		" %s%% ",		"BAT0" },
 	{ battery_remaining,    "%s",          "BAT0" },
 	{ battery_state,       " %s | ",          "BAT0" },
-	{ uptime,			" %s | ",	NULL }, */
-	{ datetime,			"%s","%F %T "},
-	//{ keymap,			" %s",				""},
+	{ uptime,			" %s | ",	NULL },*/
+	{ datetime,			"  %s","%F %T"},
+	{ keymap,			"  %s",				""},
+	{ battery_perc,		" 󰂄 %s%%",		"BAT0" },
 
 };
