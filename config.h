@@ -69,6 +69,9 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
+ 
+//static const char vol[] = "$HOME/.config/dwm/vl.sh";
+
 static const struct arg args[] = {
 	/* function format          argument */
 	/*{ cpu_perc, "^c#d791a8^  CPU: ^c#FFFFFF^%s%%", 	NULL },
@@ -80,8 +83,10 @@ static const struct arg args[] = {
 	{ battery_remaining,    "%s",          "BAT0" },
 	{ battery_state,       " %s | ",          "BAT0" },
 	{ uptime,			" %s | ",	NULL },*/
-	{ datetime,			"  %s","%F %T"},
-	{ keymap,			"  %s",				""},
+	//{ run_command,   "%s",    vol },
+	{ datetime,			"%s","%T"},
+	{ keymap,			" %s",				""},
+	{ battery_state,    " %s",          "BAT0" },
 	{ battery_perc,		" 󰂄 %s%%",		"BAT0" },
 
 };
