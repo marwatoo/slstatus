@@ -70,7 +70,7 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
  
-//static const char vol[] = "$HOME/.config/dwm/vl.sh";
+static const char vol[] = "$HOME/.config/dwm/svol.sh";
 
 static const struct arg args[] = {
 	/* function format          argument */
@@ -83,10 +83,11 @@ static const struct arg args[] = {
 	{ battery_remaining,    "%s",          "BAT0" },
 	{ battery_state,       " %s | ",          "BAT0" },
 	{ uptime,			" %s | ",	NULL },*/
-	//{ run_command,   "%s",    vol },
-	{ datetime,			"%s","%T"},
-	{ keymap,			" %s",				""},
-	{ battery_state,    " %s",          "BAT0" },
-	{ battery_perc,		" 󰂄 %s%%",		"BAT0" },
+	{ run_command,   "^c#0aaacc^%s^d^ | ",    vol },
+	{ datetime,      "^c#701aeb^%s^d^ | ","%T"},
+	{ keymap,        "^c#d4087d^%s^d^ | ",   ""},
+	{ battery_state, "^c#13bf3f^%s",          "BAT0" },
+	{ battery_perc,  " %s%%^d^",             "BAT0" },
+
 
 };
