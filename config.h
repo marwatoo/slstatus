@@ -83,11 +83,11 @@ static const struct arg args[] = {
 	{ battery_remaining,    "%s",          "BAT0" },
 	{ battery_state,       " %s | ",          "BAT0" },
 	{ uptime,			" %s | ",	NULL },*/
-	{ run_command,   "^c#0aaacc^%s^d^ | ",    vol },
-	{ datetime,      "^c#701aeb^%s^d^ | ","%T"},
-	{ keymap,        "^c#d4087d^%s^d^ | ",   ""},
-	{ battery_state, "^c#13bf3f^%s",          "BAT0" },
-	{ battery_perc,  " %s%%^d^",             "BAT0" },
+	{ run_command,   "^c#cba6f7^^d^^b#cba6f7^^c#282828^ %s ^d^^b#fab387^^c#cba6f7^^d^", vol        },
+    { datetime,      "^b#fab387^^c#1d2021^ 󱑁 %s ^d^^b#a6e3a1^^c#fab387^^d^", "%T"       },
+    { keymap,        "^b#a6e3a1^^c#282828^ 󰌌 %s ^d^^b#89b4fa^^c#a6e3a1^^d^", ""         },
+    { battery_state, "^b#89b4fa^^c#282828^ %s",                             "BAT0"     },
+    { battery_perc,  " %s%% ^d^^c#89b4fa^^d^",                      "BAT0"     },
 
 
 };
