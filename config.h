@@ -74,20 +74,11 @@ static const char vol[] = "$HOME/.config/dwm/svol.sh";
 
 static const struct arg args[] = {
 	/* function format          argument */
-	/*{ cpu_perc, "^c#d791a8^  CPU: ^c#FFFFFF^%s%%", 	NULL },
-	{ ram_used,			"RAM: %s of ",		NULL },	
-	{ ram_total,		"%s | ",		NULL },
-	{ wifi_essid,		" %s",		"wlp61s0" },
-	{ wifi_perc,		" %s%% | ",		"wlp2s0" },
-	{ battery_perc,		" %s%% ",		"BAT0" },
-	{ battery_remaining,    "%s",          "BAT0" },
-	{ battery_state,       " %s | ",          "BAT0" },
-	{ uptime,			" %s | ",	NULL },*/
-	{ run_command,   "^c#cba6f7^^d^^b#cba6f7^^c#282828^ %s ^d^^b#fab387^^c#cba6f7^^d^", vol        },
-    { datetime,      "^b#fab387^^c#1d2021^ 󱑁 %s ^d^^b#a6e3a1^^c#fab387^^d^", "%T"       },
-    { keymap,        "^b#a6e3a1^^c#282828^ 󰌌 %s ^d^^b#89b4fa^^c#a6e3a1^^d^", ""         },
-    { battery_state, "^b#89b4fa^^c#282828^ %s",                             "BAT0"     },
-    { battery_perc,  " %s%% ^d^^c#89b4fa^^d^",                      "BAT0"     },
-
-
+	{ run_command,   "^b#393E46^^c#FF79C6^ %s ^d^",                   vol    },
+	{ datetime,      "^b#2C2E33^^c#FFD700^ 󱑁 %s ^d^",                  "%T"   },
+	{ keymap,        "^b#393E46^^c#50FA7B^ 󰌌 %s ^d^",                  ""     },
+	{ battery_state, "^b#2C2E33^^c#FFB86C^ %s ^d^",                   "BAT0" },
+	{ battery_perc,  "^b#2C2E33^^c#EAEAEA^%s%%^d^ |",                 "BAT0" },
 };
+
+
