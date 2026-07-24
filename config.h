@@ -74,11 +74,11 @@ static const char vol[] = "$HOME/.config/dwm/svol.sh";
 
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command,   "^b#393E46^^c#FF79C6^ %s ^d^",                   vol    },
-	{ datetime,      "^b#2C2E33^^c#FFD700^ 󱑁 %s ^d^",                  "%T"   },
-	{ keymap,        "^b#393E46^^c#50FA7B^ 󰌌 %s ^d^",                  ""     },
-	{ battery_state, "^b#2C2E33^^c#FFB86C^ %s ^d^",                   "BAT0" },
-	{ battery_perc,  "^b#2C2E33^^c#EAEAEA^%s%%^d^ |",                 "BAT0" },
+	{ run_command,   "^b#FF79C6^^c#222831^  ^d^^b#2C2E33^^c#FF79C6^%s ^d^",                   vol    },
+	{ datetime,      "^b#FFD700^^c#222831^ 󱑁 ^d^^b#2C2E33^^c#FFD700^ %s ^d^",                  "%T"   },
+	{ keymap,        "^b#50FA7B^^c#222831^ 󰌌 ^d^^b#2C2E33^^c#50FA7B^ %s ^d^",                  ""     },
+	{ battery_state, "^b#FFB86C^^c#222831^ %s ^d^",                   "BAT0" },
+	{ battery_perc,  "^b#2C2E33^^c#FFB86C^ %s%%^d^ |",                 "BAT0" },
 };
 
 
