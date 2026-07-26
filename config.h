@@ -71,11 +71,13 @@ static const char unknown_str[] = "n/a";
  */
  
 static const char vol[] = "$HOME/.config/dwm/svol.sh";
+static const char sbr[] = "$HOME/.config/dwm/sbright.sh";
 
 static const struct arg args[] = {
 	/* function format          argument */
 	{ run_command,   "^b#FF79C6^^c#222831^  ^d^^b#2C2E33^^c#FF79C6^%s ^d^",                   vol    },
-	{ datetime,      "^b#FFD700^^c#222831^ 󱑁 ^d^^b#2C2E33^^c#FFD700^ %s ^d^",                  "%T"   },
+	{ run_command,   "^b#8BE9FD^^c#222831^ 󰃞 ^d^^b#2C2E33^^c#8BE9FD^%s ^d^",                   sbr    },
+	{ datetime,      "^b#FFD700^^c#222831^ 󱑁 ^d^^b#2C2E33^^c#FFD700^ %s ^d^",                  "%R"   },
 	{ keymap,        "^b#50FA7B^^c#222831^ 󰌌 ^d^^b#2C2E33^^c#50FA7B^ %s ^d^",                  ""     },
 	{ battery_state, "^b#FFB86C^^c#222831^ %s ^d^",                   "BAT0" },
 	{ battery_perc,  "^b#2C2E33^^c#FFB86C^ %s%%^d^ |",                 "BAT0" },
