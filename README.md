@@ -51,8 +51,8 @@ In order, left to right, as defined in `config.h`:
 
 | Segment | Source | Notes |
 |---|---|---|
-| Volume | `run_command` → `svol.sh` | Custom script, likely wrapping `pactl` |
-| Brightness | `run_command` → `sbright.sh` | Custom script, likely wrapping `brightnessctl` |
+| Volume | `run_command` → `svol.sh` | Custom script, wrapping `pactl` |
+| Brightness | `run_command` → `sbright.sh` | Custom script, wrapping `brightnessctl` |
 | Time | `datetime` | Format: `%R` (24-hour `HH:MM`) |
 | Keymap | `keymap` | Current keyboard layout |
 | Battery state | `battery_state` | Charging/discharging indicator for `BAT0` |
